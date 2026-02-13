@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import app from "./src/index"; // Ensure the path points to your plugin
+import app from "./src/index.js"; // Ensure the path points to your plugin
 
 const server = Fastify({
   logger: true,
