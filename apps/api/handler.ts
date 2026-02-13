@@ -9,6 +9,12 @@ const server = Fastify({
 server.register(app);
 
 export default async (req: any, res: any) => {
-  await server.ready();
-  server.server.emit("request", req, res);
+  try {
+    await server.ready();
+    server.server.emit("request", req, res);
+  } catch (err) {
+    console.error(err);
+    res.statusCode = 500;
+    res.end("Internal Server Error");
+  }
 };
