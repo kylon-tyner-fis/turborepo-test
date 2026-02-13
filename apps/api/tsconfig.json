@@ -2,9 +2,10 @@
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext"
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false
   },
-  "include": ["src"],
+  "include": ["src", "handler.ts"],
   "exclude": ["node_modules", "dist"]
 }
