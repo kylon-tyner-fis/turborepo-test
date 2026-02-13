@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import app from "./src/index";
+import app from "./src/index.js";
 
 const server = Fastify({ logger: true });
 server.register(app);

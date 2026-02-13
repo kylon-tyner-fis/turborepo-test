@@ -1,13 +1,13 @@
 {
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "noEmit": true,
-    "allowJs": true,
+    "outDir": "dist",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
     "esModuleInterop": true,
     "strict": true
   },
   "include": ["src", "handler.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
