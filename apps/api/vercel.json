@@ -1,4 +1,4 @@
 {
   "version": 2,
-  "rewrites": [{ "source": "/(.*)", "destination": "handler.ts" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "dist/handler.js" }]
 }
